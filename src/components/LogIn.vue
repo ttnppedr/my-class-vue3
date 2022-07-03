@@ -18,13 +18,17 @@
 import { MailIcon } from '@heroicons/vue/solid'
 import axios from 'redaxios';
 import { useMutation } from "vue-query";
+import { useAuthStore } from '@/stores/auth'
 
 const apiEndPoint = import.meta.env.VITE_API_ENDPOINT;
+const auth = useAuthStore()
 
 function loginMutation() {
   return useMutation((email) => axios.post(`${apiEndPoint}/login`, JSON.stringify(email)), {
     onSuccess: (data) => {
-      console.log(data.data)
+      auth.$subscribe((mutation, state) => localStorage.setItem('auth', JSON.stringify(state)),
+          {detached: true})
+      auth.$patch({token: data.data})
     }
   });
 }
