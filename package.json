@@ -12,6 +12,7 @@
     "@tailwindcss/forms": "^0.5.2",
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
+    "redaxios": "^0.5.0",
     "tailwindcss": "^3.1.4",
     "vue": "^3.2.25",
     "vue-query": "^1.25.0",

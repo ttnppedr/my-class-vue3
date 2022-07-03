@@ -797,6 +797,11 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
+redaxios@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/redaxios/-/redaxios-0.5.0.tgz#321aca81880b14da2fd83be82731876a1513e83b"
+  integrity sha512-qmEJjQF0igI+H9SDKlQdWz6XskJ5zm2s6KPY0AvtlbQtRNe1OcuJIfxGmySDCpoU18/UtC7zWEFIWpkHMZ1/Ow==
+
 regenerator-runtime@^0.13.4:
   version "0.13.9"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
