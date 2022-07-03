@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
+import LogIn from '@/components/LogIn.vue'
 
 export const router = createRouter({
   history: createWebHistory(),
   routes: [
-    {path: '/', name: 'Home', component: HelloWorld},
-    {path: '/:pathMatch(.*)*', redirect: {name: 'Home'}}
+    {path: '/', name: 'LogIn', component: LogIn},
+    {path: '/:pathMatch(.*)*', redirect: {name: 'LogIn'}}
   ]
 })
